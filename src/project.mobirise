@@ -1,0 +1,409 @@
+{
+  "settings": {
+    "currentPage": "index.html",
+    "name": "Bagira band",
+    "theme": {
+      "name": "mobirise3",
+      "title": "Mobirise 3",
+      "styling": {
+        "primaryColor": "#000000",
+        "secondaryColor": "#bfcecb",
+        "successColor": "#90a878",
+        "infoColor": "#7e9b9f",
+        "warningColor": "#f3c649",
+        "dangerColor": "#f28281",
+        "titleFont": "Montserrat",
+        "subtitleFont": "Lora",
+        "textFont": "Raleway",
+        "isRoundedButtons": false,
+        "isAnimatedOnScroll": true,
+        "isScrollToTopButton": true,
+        "isRtl": false
+      }
+    },
+    "versionFirst": "3.12.1",
+    "uniqCompNum": 13,
+    "versionPublish": "3.12.1",
+    "favicon": "",
+    "noImageResize": ""
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            ".hide-buttons .nav-btn": {
+              "display": "none !important"
+            },
+            ".navbar-caption": {
+              "color": "#ffffff"
+            },
+            ".navbar-toggler": {
+              "color": "#ffffff"
+            },
+            ".link, .dropdown-item": {
+              "color": "#ffffff",
+              "googleLink": "https://fonts.googleapis.com/css?family=Oswald:400,300,700",
+              "font-family": "'Oswald', sans-serif"
+            },
+            ".link": {
+              "font-size": "1rem"
+            },
+            ".dropdown-item, .nav-dropdown-sm .link": {
+              "font-size": "1.083rem"
+            },
+            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-menu": {
+              "background": "#000000"
+            },
+            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
+              "background": "#000000!important"
+            },
+            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
+              "background": "#000000"
+            },
+            ".bg-color.transparent .link": {
+              "color": "#ffffff",
+              "transition": "none"
+            },
+            ".bg-color.transparent.opened .link": {
+              "transition": "color .2s ease-in-out"
+            },
+            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
+              "color": "@primaryColor"
+            },
+            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
+              "color": "#c0a375!important"
+            },
+            "&.mbr-navbar--stuck .mbr-navbar__section": {
+              "background": "#2c2c2c"
+            },
+            ".mbr-navbar__section": {},
+            ".mbr-navbar__hamburger": {
+              "color": "#ffffff"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#ffffff"
+            }
+          },
+          "_name": "menu",
+          "_anchor": "menu-0",
+          "_params": {
+            "bgColor": "#000000",
+            "fontSize": "1",
+            "fontName": {
+              "name": "Oswald",
+              "url": "https://fonts.googleapis.com/css?family=Oswald:400,300,700",
+              "css": "'Oswald', sans-serif"
+            },
+            "fontColor": "#ffffff",
+            "fontHoverColor": "@primaryColor",
+            "transparent": true,
+            "sticky": true,
+            "logo": false,
+            "showBrand": false,
+            "collapsed": true,
+            "hideButtons": true
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@THEME_PATH@/components/_images/logo.png",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "https://mobirise.com"
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Brand Name\">MOBIRISE</a>",
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html#slider-5\">О ГРУППЕ</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">НОВОСТИ</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">КОНЦЕРТЫ</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">ДИСКОГРАФИЯ</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">КОНТАКТЫ</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        },
+        {
+          "_name": "header1",
+          "_afterNavbarItem": ".mbr-section > .mbr-box__magnet",
+          "_anchor": "header1-1",
+          "_params": {
+            "parallax": true,
+            "bgImageRadio": true,
+            "showArrow": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/4-2000x1023.jpg",
+            "bgColor": "#a07e49",
+            "bgColorRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": true,
+            "overlayOpacity": "0.1",
+            "overlayColor": "#000000",
+            "contentAlign": "center",
+            "showTitle": false,
+            "showText": false,
+            "showButtons": false
+          },
+          "title": "FULL SCREEN INTRO",
+          "text": "Click any text to edit or style it. Click blue \"Gear\" icon in the top right corner to hide/show buttons, text, title and change the block background. <br> Click red \"+\" in the bottom right corner to add a new block. Use the top left menu to create new pages, sites and add extensions.",
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">CLICK TO EDIT</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">CLICK TO EDIT</a>",
+          "_styles": {
+            ".mbr-section-lead": {
+              "text-align": "center"
+            }
+          }
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "slider",
+          "_params": {
+            "autoplay": true,
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "timeout": 5,
+            "slides": [
+              {
+                "active": false,
+                "image": "@PROJECT_PATH@/assets/images/5-2000x1023.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "overlay": true,
+                "contentAlign": "left",
+                "showTitle": false,
+                "title": "FULL SCREEN SLIDER",
+                "showText": true,
+                "text": "<br>GROOVE METAL BAND<br>РОССИЙСКАЯ ФЕДЕРАЦИЯ<br>RUSSIAN FEDERATION<br><br><br><span style=\"line-height: 1.5;\">ПО ВОПРОСАМ ОРГАНИЗАЦИИ КОНЦЕРТОВ:</span><br>+79172745370<br>BAGIRA-METAL@MAIL.RU<br>",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "active": false,
+                "image": "@PROJECT_PATH@/assets/images/1-2000x846.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "overlay": true,
+                "contentAlign": "center",
+                "showTitle": false,
+                "title": "FULL SCREEN SLIDER",
+                "showText": false,
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "active": true,
+                "image": "@THEME_PATH@/components/_images/slider/bridge.jpg",
+                "playVideo": true,
+                "videoUrl": "https://www.youtube.com/watch?v=ntlC2EkAems",
+                "overlay": true,
+                "contentAlign": "center",
+                "showTitle": true,
+                "title": "Багира - Копы (Грибы cover)",
+                "showText": true,
+                "text": "Невозможно не наваливать бас под этот трек. Мы подумали и решили - а почему бы нет? И записали для вас stupid metal version cover. Итс онли джоук, гайс :)",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "active": false,
+                "image": "@THEME_PATH@/components/_images/slider/bridge.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/0P585PjX3kQ",
+                "overlay": true,
+                "overlayOpacity": "0.5",
+                "contentAlign": "center",
+                "showTitle": true,
+                "title": "Багира - Шёпот",
+                "showText": true,
+                "text": "Шёпот - это первый сингл с грядущего альбома Багиры, релиз которого ожидается в первой половине 2016 года на Fono Ltd.",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "active": false,
+                "image": "@PROJECT_PATH@/assets/images/2-2000x1025.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "overlay": true,
+                "contentAlign": "center",
+                "showTitle": false,
+                "title": "FULL SCREEN SLIDER",
+                "showText": false,
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "active": false,
+                "image": "@THEME_PATH@/components/_images/slider/bridge.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/aEigxLi8MbU",
+                "overlay": true,
+                "overlayOpacity": "0.5",
+                "contentAlign": "center",
+                "showTitle": false,
+                "title": "Багира - Запах Войны",
+                "showText": false,
+                "text": "Запах войны - второй сингл с грядущего альбома Багиры, релиз которого ожидается в первой половине 2016 года под эгидой Fono Ltd. Его презентация - наш первый опыт лирик видео, и именно эта форма, на наш взгляд, максимально отражает идею, которую мы хотели донести. Поэтому без комментариев и приятного просмотра!",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "active": false,
+                "image": "@PROJECT_PATH@/assets/images/3-2000x1025.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "overlay": true,
+                "contentAlign": "center",
+                "showTitle": false,
+                "title": "FULL SCREEN SLIDER",
+                "showText": false,
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "active": false,
+                "image": "@THEME_PATH@/components/_images/slider/bridge.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/Js1qZrc9nM4",
+                "overlay": true,
+                "overlayOpacity": "0.7",
+                "contentAlign": "center",
+                "showTitle": true,
+                "title": "Багира. \"Живые\". Своё Радио (20.01.2017)",
+                "showText": true,
+                "text": "Живое выступление в студии \"Своего Радио\" в программе \"Живые\"",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "active": false,
+                "image": "@PROJECT_PATH@/assets/images/4-1-2000x1025.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "overlay": true,
+                "contentAlign": "center",
+                "showTitle": false,
+                "title": "FULL SCREEN SLIDER",
+                "showText": false,
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "showButtons": false,
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-success\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              }
+            ],
+            "fullScreen": true,
+            "bgColor": "#fff",
+            "showBullets": true
+          },
+          "_anchor": "slider-5",
+          "articleLayout": false,
+          "_styles": {
+            "H2": {
+              "text-align": "center",
+              "color": "#ffffff"
+            },
+            "P": {
+              "text-align": "left",
+              "font-family": "'Lora', serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Lora:400,700",
+              "font-size": "22px"
+            }
+          }
+        },
+        {
+          "_inherit": "social-buttons2",
+          "_styles": {
+            ".mbr-section-title, .btn-social": {
+              "color": "#fff"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "social-buttons4",
+          "_anchor": "social-buttons4-b",
+          "_params": {
+            "paddingTop": "2",
+            "paddingBottom": "0",
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/landscape3.jpg",
+            "bgColor": "#000000",
+            "bgColorRadio": true,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222"
+          },
+          "text": "",
+          "icons": "<a data-app-btn=\"true\" class=\"btn btn-social\" title=\"Twitter\" target=\"_blank\" href=\"https://twitter.com/\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrFonts,-mbrFontSize,-mbrBtnColor\"><i class=\"socicon socicon-twitter\"></i></a> <a data-app-btn=\"true\" class=\"btn btn-social\" title=\"Facebook\" target=\"_blank\" href=\"https://www.facebook.com/\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrFonts,-mbrFontSize,-mbrBtnColor\"><i class=\"socicon socicon-facebook\"></i></a> <a data-app-btn=\"true\" class=\"btn btn-social\" title=\"Google+\" target=\"_blank\" href=\"https://plus.google.com/\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrFonts,-mbrFontSize,-mbrBtnColor\"><i class=\"socicon socicon-googleplus\"></i></a> <a data-app-btn=\"true\" class=\"btn btn-social\" title=\"YouTube\" target=\"_blank\" href=\"https://www.youtube.com/\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrFonts,-mbrFontSize,-mbrBtnColor\"><i class=\"socicon socicon-youtube\"></i></a> <a data-app-btn=\"true\" class=\"btn btn-social\" title=\"Instagram\" target=\"_blank\" href=\"https://instagram.com/\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrFonts,-mbrFontSize,-mbrBtnColor\"><i class=\"socicon socicon-instagram\"></i></a> <a data-app-btn=\"true\" class=\"btn btn-social\" title=\"Pinterest\" target=\"_blank\" href=\"https://www.pinterest.com/\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrFonts,-mbrFontSize,-mbrBtnColor\"><i class=\"socicon socicon-pinterest\"></i></a> <a data-app-btn=\"true\" class=\"btn btn-social\" title=\"Tumblr\" target=\"_blank\" href=\"http://tumblr.com/\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrFonts,-mbrFontSize,-mbrBtnColor\"><i class=\"socicon socicon-tumblr\"></i></a> <a data-app-btn=\"true\" class=\"btn btn-social\" title=\"LinkedIn\" target=\"_blank\" href=\"https://www.linkedin.com/\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrFonts,-mbrFontSize,-mbrBtnColor\"><i class=\"socicon socicon-linkedin\"></i></a> <a data-app-btn=\"true\" class=\"btn btn-social\" title=\"VKontakte\" target=\"_blank\" href=\"#\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrFonts,-mbrFontSize,-mbrBtnColor\"><i class=\"socicon socicon-vkontakte\"></i></a> <a data-app-btn=\"true\" class=\"btn btn-social\" title=\"Odnoklassniki\" target=\"_blank\" href=\"#\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrFonts,-mbrFontSize,-mbrBtnColor\"><i class=\"socicon socicon-odnoklassniki\"></i></a> "
+        },
+        {
+          "_styles": {
+            ".mbr-section-title, p": {
+              "color": "#fff"
+            },
+            "DIV": {
+              "color": "#ffffff"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content5",
+          "_anchor": "content5-6",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@THEME_PATH@/components/_images/desert2.jpg",
+            "bgColor": "#000000",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": true,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#000",
+            "showTitle": true,
+            "showCaption": true
+          },
+          "title": "О ГРУППЕ",
+          "caption": "<p>Багира – российская грув метал группа из Казани, на счету которой 3 успешно выпущенных российскими лейблами альбома, несколько синглов и множество концертов в разных уголках России. Классический мужской состав «2 гитары – бас – барабаны» в группе разбавлен эмоциональным женским вокалом, а искренняя любовь к «Pantera» и другим представителям «groove-metal» заставляет взглянуть по-новому на женский вокал в тяжелой музыке.&nbsp;</p><div>Группа была образована Аллой Булгаковой и Александром Шадровым в 2011 году. Её история началась с выпуска первого полноформатного альбома «Амнезия». До конца 2013 года Багира играла «в одну гитару», исповедуя аутентичное звучание. Однако после выхода в октябре 2013 года второго альбома «По крови зари» музыканты почувствовали потребность в большей мощи и плотности звука, и впервые в своей истории обзавелись вторым гитаристом Глебом Воденниковым. Тогда же первые композиции группы появились на ITunes и других интернет-витринах, что расширило аудиторию слушателей и позволило песням БАГИРЫ выйти за пределы страны.&nbsp;</div><div>Со временем взгляды на музыку у участников группы изменились и концепцией третьего альбома, который создавался в период 2014-2016 гг, стали прямота и честность – как текстов, так и музыки. В преддверии выхода третьего альбома БАГИРА выпускает 2 интернет-сингла – клип «Шёпот» и лирик-видео «Запах войны», которые дали возможность частично познакомить с будущим альбомом слушателей и заявить о некоторой смене направления.&nbsp;</div><div><br></div><div>На творчество Багиры оказали сильное влияние и зарубежные группы, такие как Metallica, Pantera, Machine Head, In Flames, Arch Enemy, и российские – Ария, Мастер.</div><p></p>"
+        },
+        {
+          "_name": "footer1",
+          "_anchor": "footer1-2",
+          "_params": {
+            "paddingTop": 2,
+            "paddingBottom": 2,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/contacts_foto-2000x503.jpg",
+            "bgColor": "#000000",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#444444"
+          },
+          "text": "Copyright &nbsp;(c) 2017 Багира."
+        }
+      ]
+    }
+  }
+}
