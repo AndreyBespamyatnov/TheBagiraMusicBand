@@ -92,10 +92,14 @@ h6,
 .bg-danger {
   background-color: #f28281 !important;
 }
-.btn-primary {
-  background-color: #000000;
-  border-color: #000000;
-  color: #ffffff;
+.bg-info {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #000000 !important;
+  font-family: "Montserrat"!important;
+  font-size: 0.75rem!important;
+  font-weight: 700!important;
+  font-style: initial !important;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -436,7 +440,7 @@ h6,
 #menu-0 .dropdown-item:hover,
 #menu-0 .link:focus,
 #menu-0 .dropdown-item:focus {
-  color: #000000;
+  color: #FFF;
 }
 #menu-0 .link[aria-expanded="true"],
 #menu-0 .dropdown-menu {
@@ -505,4 +509,123 @@ h6,
 }
 #section-about DIV {
   color: #ffffff;
+}
+
+#slider-news .mbr-section-title,
+#slider-news p {
+  color: #fff;
+}
+#slider-news DIV {
+  color: #ffffff;
+}
+
+#slider-gigs .mbr-section-title,
+#slider-gigs p {
+  color: #fff;
+}
+#slider-gigs DIV {
+  color: #ffffff;
+}
+
+#slider-albums .mbr-section-title,
+#slider-albums p {
+  color: #fff;
+}
+#slider-albums DIV {
+  color: #ffffff;
+}
+
+#slider-contacts .mbr-section-title,
+#slider-contacts p {
+  color: #fff;
+}
+#slider-contacts DIV {
+  color: #ffffff;
+}
+
+.mbr-testimonial .card-block{
+  background: #565656;
+}
+
+/* ======= Gigs Section ======= */
+.gigs-section .container {
+}
+.gigs-section .item {
+  position: relative;
+  padding-left: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.gigs-section .date-label {
+  background: #101113;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  width: 45px;
+  height: 55px;
+  padding-top: 4px;
+  position: absolute;
+  left: 0;
+  top: 15px;
+}
+.gigs-section .date-label .number {
+}
+.gigs-section .date-label .month {
+  color: rgba(255, 255, 255, 0.8);
+}
+.gigs-section .gig-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.gigs-section .meta-list {
+  color: #FFF;
+}
+.gigs-section .meta-list a {
+  color: #FFF;
+}
+.gigs-section .meta-list .fa {
+  margin-right: 5px;
+  color: #FFF;
+  font-size: 16px;
+}
+.gigs-section .gig-actions {
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+.gigs-section .gig-actions .btn {
+  margin-right: 5px;
+}
+.gigs-section .gig-actions .btn:last-child {
+  margin-right: 0;
+}
+.gigs-section .info-extra {
+  color: #4f545e;
+}
+.gigs-section .gigs-contact {
+  margin-top: 60px;
+}
+.gigs-section .gigs-contact .title {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.gigs-section .gigs-contact .intro {
+  color: #4f545e;
+  max-width: 800px;
+}
+.gigs-section .gigs-contact .btn {
+  margin-top: 15px;
+}
+
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
 }
