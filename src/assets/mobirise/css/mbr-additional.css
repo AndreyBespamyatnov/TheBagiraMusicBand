@@ -467,7 +467,7 @@ h6,
 }
 #menu-0 .link[aria-expanded="true"],
 #menu-0 .dropdown-item[aria-expanded="true"] {
-  color: #c0a375!important;
+  color: #000000!important;
 }
 #menu-0.mbr-navbar--stuck .mbr-navbar__section {
   background: #2c2c2c;
@@ -491,14 +491,18 @@ h6,
   font-family: 'Lora', serif;
   font-size: 22px;
 }
-#social-buttons4-b .mbr-section-title,
-#social-buttons4-b .btn-social {
+#msg-box6-h .mbr-section-title,
+#msg-box6-h .lead p {
   color: #fff;
 }
-#content5-6 .mbr-section-title,
-#content5-6 p {
+#section-social .mbr-section-title,
+#section-social .btn-social {
   color: #fff;
 }
-#content5-6 DIV {
+#section-about .mbr-section-title,
+#section-about p {
+  color: #fff;
+}
+#section-about DIV {
   color: #ffffff;
 }
