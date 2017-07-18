@@ -631,6 +631,13 @@ a {
     height: 100%;
     position: relative
 }
+#loading-logo-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -198px;
+    margin-left: -74px;
+}
 #loading-center-absolute {
     position: absolute;
     left: 50%;
@@ -744,3 +751,4 @@ a {
     margin-bottom: 40PX;
     margin-top: 20px;
 }
+
