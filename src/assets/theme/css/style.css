@@ -10,7 +10,7 @@
     margin-bottom: 0.5rem;
 }
 .btn + .btn {
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
 @media (max-width: 767px) {
     .btn {
@@ -40,8 +40,8 @@
 }
 .btn {
     font-weight: 500;
-    letter-spacing: 2px;
-    padding: 0.75rem 2.1875rem;
+    /* letter-spacing: 2px; */
+    /* padding: 0.75rem 2.1875rem; */
     font-size: 0.75rem;
     line-height: 1.5;
     border-radius: 3px;
@@ -781,6 +781,12 @@ input:-webkit-autofill:active {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.mbr-section-full-nt {
+    height: 100vh;
+    padding-bottom: 0;
+    padding-top: 0;
+    width: 100%;
 }
 .mbr-section-full {
     display: table;

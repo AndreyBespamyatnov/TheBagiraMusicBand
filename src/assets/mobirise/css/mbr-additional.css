@@ -1,4 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Russo+One:400,300,700);
+
+body,
+.modal-content {
+    background-color: #000;
+}
+
 body,
 html,
 input,
@@ -51,7 +57,11 @@ h6,
 .mbr-author-desc,
 .mbr-plan-title,
 .mbr-plan-subtitle,
-.mbr-plan-price-desc {
+.mbr-plan-price-desc,
+.close,
+.close:focus, 
+.close:hover,
+a {
     font-family: 'Russo One', sans-serif;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
@@ -78,6 +88,21 @@ h6,
     font-size: 0.75rem!important;
     font-weight: 700!important;
     font-style: initial !important;
+}
+.btn-info {
+    background-color: #FFF;
+    border-color: #FFF;
+    box-shadow: none;
+    color: #000;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info.focus,
+.btn-info:active,
+.btn-info.active {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
 }
 .btn-primary {
     background-color: #FFF;
@@ -119,20 +144,6 @@ h6,
     color: #ffffff !important;
     background-color: #94ada8 !important;
     border-color: #94ada8 !important;
-}
-.btn-info {
-    background-color: #7e9b9f;
-    border-color: #7e9b9f;
-    color: #ffffff;
-}
-.btn-info:hover,
-.btn-info:focus,
-.btn-info.focus,
-.btn-info:active,
-.btn-info.active {
-    color: #ffffff;
-    background-color: #597478;
-    border-color: #597478;
 }
 .btn-info.disabled,
 .btn-info:disabled {
@@ -525,7 +536,8 @@ h6,
 }
 /* ======= Gigs Section ======= */
 
-.gigs-section .container {} .gigs-section .item {
+.gigs-section .container {} 
+.gigs-section .item {
     position: relative;
     padding-left: 60px;
     padding-top: 15px;
@@ -603,3 +615,132 @@ h6,
 .mbr-arrow {
     bottom: 0px;
 } 
+
+
+#loading {
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    margin-top: 0;
+    top: 0
+}
+#loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative
+}
+#loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 50px;
+    width: 150px;
+    margin-top: -25px;
+    margin-left: -75px
+}
+.object {
+    width: 8px;
+    height: 50px;
+    margin-right: 5px;
+    background-color: #FFF;
+    -webkit-animation: animate 1s infinite;
+    animation: animate 1s infinite;
+    float: left
+}
+.object:last-child {
+    margin-right: 0
+}
+.object:nth-child(10) {
+    -webkit-animation-delay: .9s;
+    animation-delay: .9s
+}
+.object:nth-child(9) {
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s
+}
+.object:nth-child(8) {
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s
+}
+.object:nth-child(7) {
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s
+}
+.object:nth-child(6) {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s
+}
+.object:nth-child(5) {
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s
+}
+.object:nth-child(4) {
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s
+}
+.object:nth-child(3) {
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s
+}
+.object:nth-child(2) {
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s
+}
+@-webkit-keyframes animate {
+    50% {
+        -ms-transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0)
+    }
+}
+@keyframes animate {
+    50% {
+        -ms-transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0)
+    }
+}
+
+.mbr-section-full-not-bable {
+    height: 100vh;
+    padding-bottom: 0;
+    padding-top: 0;
+    width: 100%;
+}
+
+.mbr-section-full-not-bable > .mbr-table-cell {
+    width: 100%;
+}
+
+
+.btn-group-vertical > .btn {
+    white-space: normal;
+}
+.btn-group-vertical>.btn:first-child:not(:last-child) {
+    border-top-right-radius: 0;
+}
+.btn-group-vertical>.btn:last-child:not(:first-child) {
+    border-bottom-left-radius: 0;
+}
+
+.albums-row {
+    padding-top: 60px;
+}
+
+.close,
+.close:focus, 
+.close:hover {
+    opacity: 1;
+}
+
+.video-title {
+    margin-bottom: 1.5rem;
+}
+
+
+.mbr-section-title-mobile {
+    margin-bottom: 40PX;
+    margin-top: 20px;
+}
