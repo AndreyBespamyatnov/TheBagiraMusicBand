@@ -315,6 +315,10 @@
 
         // smooth scroll
         if (!$('html').hasClass('is-builder')) {
+            $('button').click(function(e) {
+                $(this).blur();
+            });
+
             $(document).click(function(e) {
                 try {
                     var target = e.target;

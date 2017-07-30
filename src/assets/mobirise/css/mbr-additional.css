@@ -377,11 +377,11 @@ a {
 }
 .mbr-footer-content li a:hover,
 .mbr-footer .mbr-contacts li a:hover {
-    color: #000000;
+    color: #FFF;
 }
 .lead a,
 .lead a:hover {
-    color: #000000;
+    color: #FFF;
 }
 .lead blockquote {
     border-color: #000000;
@@ -509,6 +509,14 @@ a {
 }
 #slider-news DIV {
     color: #ffffff;
+}
+#slider-news .news-list {
+    font-size: 18px;
+    padding-left: 70px;
+    padding-bottom: 60px;
+    color: #d0cfda;
+    list-style: none;
+    list-style-image: url(../images/alinkamarker.png);
 }
 #slider-gigs .mbr-section-title,
 #slider-gigs p {
@@ -752,3 +760,39 @@ a {
     margin-top: 20px;
 }
 
+.news-container .news-marker {
+    float: left;
+    padding-right: 10px;
+}
+
+.btn-bagira {
+    border-color: #d0cfda;
+    box-shadow: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    background-color: transparent;
+    color: #d0cfda;
+    font-style: normal;
+}
+.btn-bagira:hover,
+.btn-bagira:focus,
+.btn-bagira.focus,
+.btn-bagira:active,
+.btn-bagira.active {
+    color: #000;
+    background-color: #d0cfda !important;
+    box-shadow: 0 12px 16px 0 #d0cfda, 0 17px 50px 0 #d0cfda;
+}
+.btn-bagira.disabled,
+.btn-bagira:disabled {
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
