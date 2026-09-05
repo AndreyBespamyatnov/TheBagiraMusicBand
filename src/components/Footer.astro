@@ -1,0 +1,18 @@
+---
+import { getDict, type Lang } from '../i18n';
+import SocialRow from './SocialRow.astro';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getDict(lang);
+---
+
+<footer class="site-footer">
+  <div class="wrap">
+    <SocialRow />
+    <p>{t.footer.copyright} · {t.footer.rights}</p>
+  </div>
+</footer>

@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "siteName": "BAGIRA",
+    "homeTitle": "BAGIRA — official site",
+    "homeDescription": "BAGIRA is a female-fronted groove / modern metal band from Kazan. New single Metelitsa and the album Chaos and Darkness.",
+    "discoTitle": "Discography — BAGIRA",
+    "discoDescription": "Official BAGIRA discography: albums, singles and collaborations from 2011 to 2026.",
+    "ogAlt": "BAGIRA band photograph"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "tour": "Tour",
+    "disco": "Discography",
+    "contacts": "Contacts",
+    "menu": "Menu",
+    "close": "Close menu",
+    "skip": "Skip to content",
+    "langRu": "Ru",
+    "langEn": "En",
+    "langLabel": "Language"
+  },
+  "hero": {
+    "listen": "Listen",
+    "latestChip": "New single",
+    "scroll": "Scroll"
+  },
+  "latest": {
+    "kicker": "Latest release",
+    "title": "Metelitsa",
+    "pitch": "A snowstorm, a road to the edge of the earth, and melodic death metal with a female voice — the first single of 2026.",
+    "listen": "Listen on BandLink",
+    "video": "Video"
+  },
+  "about": {
+    "kicker": "About",
+    "title": "BAGIRA",
+    "portraitAlt": "Alla Bulgakova, BAGIRA vocals",
+    "paragraphs": [
+      "BAGIRA (formerly Багира) is a female-fronted metal band from Kazan, Tatarstan, with mostly Russian lyrics. Alla Bulgakova and Alexander Shadrov formed the group in 2011. The Latin spelling BAGIRA has been the official name since 2018.",
+      "Early on the band played classic heavy metal with clean, sung vocals. The music grew harsher with time. Today they describe it as metal that moves between groove, death, and melodeath — cinematic and mystic, with both clean and extreme vocals.",
+      "For a band of this age the catalogue is dense: five studio albums, a long run of singles, and many covers. The third album Scars (7 February 2017, Fono Ltd.) was widely praised and opened a much larger audience.",
+      "From late 2017 they have worked in their own studio. In 2018 they released three singles with very different atmospheres — Shadow, Basic Instinct, and Zoo — as a statement of a new sound. Listeners at home split into camps; abroad, the records started to travel.",
+      "In 2019 BAGIRA recut Whisper (from Scars) and Shadow with English lyrics. The EP From Russia with Groove arrived on 20 August 2019. On 20 May 2020 they added the English single Guardian Angel, written in lockdown.",
+      "A run of singles built the fourth album: Brother Against Brother, Taboo, Rock and Roll Is No More, Nothing Sacred. At the same time they arranged metal versions of other people's songs, later collected as Covered in Metal (2021). In April 2021 they wrote and recorded Keep Face live on their YouTube channel, with fans sending parts into the mix.",
+      "And the Thunder Will Strike came out on Fono Ltd. on 27 July 2021: eleven Russian songs and the bonus track Guardian Angel. After more years in their own studio, the fifth album Chaos and Darkness followed on 4 October 2024 — witches, violin, frost, and ember red on black. Then came the singles Angels and Demons (23 May 2025) and Metelitsa (6 February 2026).",
+      "BAGIRA has played Taman — Peninsula of Freedom, Uletay, Stary Novy Rock, Vzlyotnaya Polosa, Bereg Maugli, Sursky Rock, Baikurultai and others, and has shared stages with Grave Digger, Wintersun, Ektomorf, and Artillery. The records they name as touchstones are Metallica, Pantera, Machine Head, In Flames, Arch Enemy, and Lamb of God."
+    ]
+  },
+  "lineup": {
+    "kicker": "Line-up",
+    "title": "Who is on stage"
+  },
+  "videos": {
+    "kicker": "Video",
+    "title": "Clips",
+    "play": "Play video",
+    "channel": "YouTube channel"
+  },
+  "tour": {
+    "kicker": "Tour",
+    "title": "Upcoming dates",
+    "empty": "No announced dates right now — the summer 2026 shows have already been played. Watch the BandLink poster or write to booking.",
+    "tickets": "Tickets and dates",
+    "ticketsHref": "https://band.link/bagiralive/",
+    "date": "Date",
+    "city": "City",
+    "venue": "Venue"
+  },
+  "contacts": {
+    "kicker": "Contacts",
+    "title": "Booking and collaboration",
+    "lead": "For shows and any other cooperation:",
+    "person": "Alexander Shadrov",
+    "email": "bagira-metal@mail.ru",
+    "phone": "+7 (904) 763-83-56",
+    "phoneHref": "tel:+79047638356"
+  },
+  "disco": {
+    "kicker": "Catalogue",
+    "title": "Discography",
+    "lead": "Official releases, newest first. One BandLink button per record — no dead store pop-ups.",
+    "filterAll": "All",
+    "filterAlbums": "Albums",
+    "filterSingles": "Singles",
+    "filterCollabs": "Collabs",
+    "listen": "Listen",
+    "tracks": "Tracklist",
+    "label": "Label",
+    "typeAlbum": "Album",
+    "typeSingle": "Single",
+    "typeCollab": "Collab"
+  },
+  "footer": {
+    "copyright": "© 2026 BAGIRA",
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "lead": "This link is old or the address is wrong.",
+    "home": "Russian home",
+    "homeEn": "English home"
+  }
+}

@@ -1,0 +1,23 @@
+---
+import { getDict, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getDict(lang);
+---
+
+<section class="section" id="contacts">
+  <div class="wrap">
+    <p class="kicker">{t.contacts.kicker}</p>
+    <h2 class="section-title">{t.contacts.title}</h2>
+    <div class="contacts-card">
+      <p>{t.contacts.lead}</p>
+      <p><strong>{t.contacts.person}</strong></p>
+      <a href={t.contacts.phoneHref}>{t.contacts.phone}</a>
+      <a href={`mailto:${t.contacts.email}`}>{t.contacts.email}</a>
+    </div>
+  </div>
+</section>

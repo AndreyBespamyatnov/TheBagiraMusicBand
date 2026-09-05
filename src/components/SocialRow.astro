@@ -1,0 +1,43 @@
+---
+import socials from '../data/socials.json';
+import Icons from './Icons.astro';
+
+interface Props {
+  class?: string;
+}
+
+const { class: className = 'listen-row' } = Astro.props;
+---
+
+<ul class={className}>
+  {
+    socials.map((item) => (
+      <li>
+        <a href={item.href} rel="noopener noreferrer" target="_blank">
+          <Icons name={item.id} />
+          <span class="visually-hidden">{item.label}</span>
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>

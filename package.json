@@ -1,0 +1,40 @@
+{
+  "name": "bagira-official-site",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Official BAGIRA website — static Astro build for bagiraofficial.ru",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1 --port 4321",
+    "check": "astro check",
+    "assets": "node scripts/fetch-assets.mjs",
+    "test": "npm run check && npm run test:e2e && npm run test:perf",
+    "test:e2e": "npm run build && start-server-and-test preview http://127.0.0.1:4321 cypress:run",
+    "test:e2e:open": "npm run build && start-server-and-test preview http://127.0.0.1:4321 cypress:open",
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
+    "test:perf": "npm run build && start-server-and-test preview http://127.0.0.1:4321 \"npm run lhci:run && npm run lhci:desktop\"",
+    "lhci:run": "node scripts/lighthouse-budget.mjs mobile",
+    "lhci:desktop": "node scripts/lighthouse-budget.mjs desktop"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.3.1",
+    "sharp": "^0.35.4",
+    "typescript": "6.0.3"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.15.1",
+    "axe-core": "^4.13.0",
+    "cypress": "^16.0.0",
+    "cypress-axe": "^1.7.0",
+    "cypress-image-diff-js": "^2.8.0",
+    "start-server-and-test": "^3.0.12"
+  }
+}

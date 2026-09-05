@@ -1,0 +1,57 @@
+---
+import logo from '../assets/logo.png';
+import releases from '../data/releases.json';
+import { getDict, localized, type Lang } from '../i18n';
+import { heroSources } from './heroImages';
+import SocialRow from './SocialRow.astro';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getDict(lang);
+const latest = releases.find((item) => item.featured) ?? releases[0];
+const hero = await heroSources();
+---
+
+<section class="hero" aria-label="BAGIRA">
+  <div class="photo">
+    <picture>
+      <source type="image/webp" srcset={hero.webp} sizes="100vw" />
+      <img
+        src={hero.fallback.src}
+        srcset={hero.jpeg}
+        sizes="100vw"
+        alt={t.meta.ogAlt}
+        width={hero.width}
+        height={hero.height}
+        fetchpriority="high"
+        loading="eager"
+        decoding="sync"
+      />
+    </picture>
+  </div>
+  <div class="hero-inner">
+    <h1>
+      <img class="hero-logo" src={logo.src} alt="BAGIRA" width={logo.width} height={logo.height} />
+    </h1>
+    <a class="hero-chip" href={latest.listen} rel="noopener noreferrer" target="_blank">
+      {t.hero.latestChip} · {localized(latest.title, lang)}
+    </a>
+    <SocialRow />
+    <a class="scroll-cue" href="#latest">
+      <span class="visually-hidden">{t.hero.scroll}</span>
+    </a>
+  </div>
+</section>
+
+<style>
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+</style>

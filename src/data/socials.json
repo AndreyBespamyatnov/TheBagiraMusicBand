@@ -1,0 +1,11 @@
+[
+  { "id": "vk", "label": "VKontakte", "href": "https://vk.com/bagirametal" },
+  { "id": "spotify", "label": "Spotify", "href": "https://open.spotify.com/artist/3j1EDcvcTIShQ7gL1NOIqr" },
+  { "id": "youtube", "label": "YouTube", "href": "https://www.youtube.com/c/bagiraofficial" },
+  { "id": "apple", "label": "Apple Music", "href": "https://music.apple.com/us/artist/bagira/670139076" },
+  { "id": "tiktok", "label": "TikTok", "href": "https://www.tiktok.com/@bagiraofficial" },
+  { "id": "bandlink", "label": "BandLink", "href": "https://band.link/bagira" },
+  { "id": "telegram", "label": "Telegram", "href": "https://t.me/bagiraofficial" },
+  { "id": "yandex", "label": "Yandex Music", "href": "https://music.yandex.ru/artist/674349" },
+  { "id": "instagram", "label": "Instagram", "href": "https://www.instagram.com/bagiraofficial" }
+]

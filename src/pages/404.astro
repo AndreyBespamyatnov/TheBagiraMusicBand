@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro';
+import { getDict } from '../i18n';
+
+const ru = getDict('ru');
+const en = getDict('en');
+---
+
+<Base lang="ru" page="404" title={`${ru.notFound.title} — BAGIRA`} description={ru.notFound.lead} path="/404.html">
+  <main id="content" class="section">
+    <div class="wrap page-not-found">
+      <h1 class="section-title">{ru.notFound.title}</h1>
+      <p lang="en">{en.notFound.title}</p>
+      <p>{ru.notFound.lead}</p>
+      <p lang="en">{en.notFound.lead}</p>
+      <p>
+        <a class="btn" href="/">{ru.notFound.home}</a>
+        <a class="btn btn-ghost" href="/en/">{en.notFound.homeEn}</a>
+      </p>
+    </div>
+  </main>
+</Base>

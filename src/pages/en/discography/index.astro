@@ -1,0 +1,29 @@
+---
+import CoverGrid from '../../../components/CoverGrid.astro';
+import { getDict } from '../../../i18n';
+import Base from '../../../layouts/Base.astro';
+
+const lang = 'en' as const;
+const t = getDict(lang);
+---
+
+<Base lang={lang} page="disco" title={t.meta.discoTitle} description={t.meta.discoDescription} path="/en/discography/">
+  <main id="content" class="section">
+    <div class="wrap">
+      <p class="kicker">{t.disco.kicker}</p>
+      <h1 class="section-title">{t.disco.title}</h1>
+      <p>{t.disco.lead}</p>
+      <form class="filters" aria-label={t.disco.title}>
+        <input type="radio" name="type" id="filter-all" value="all" checked />
+        <label for="filter-all">{t.disco.filterAll}</label>
+        <input type="radio" name="type" id="filter-albums" value="album" />
+        <label for="filter-albums">{t.disco.filterAlbums}</label>
+        <input type="radio" name="type" id="filter-singles" value="single" />
+        <label for="filter-singles">{t.disco.filterSingles}</label>
+        <input type="radio" name="type" id="filter-collabs" value="collab" />
+        <label for="filter-collabs">{t.disco.filterCollabs}</label>
+      </form>
+      <CoverGrid lang={lang} />
+    </div>
+  </main>
+</Base>

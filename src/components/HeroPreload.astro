@@ -1,0 +1,14 @@
+---
+import { heroSources } from './heroImages';
+
+const hero = await heroSources();
+---
+
+<link
+  rel="preload"
+  as="image"
+  type="image/webp"
+  imagesrcset={hero.webp}
+  imagesizes="100vw"
+  fetchpriority="high"
+/>

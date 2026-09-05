@@ -1,0 +1,36 @@
+---
+import { Picture } from 'astro:assets';
+import about from '../assets/about.jpg';
+import { getDict, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getDict(lang);
+---
+
+<section class="section" id="about">
+  <div class="wrap about">
+    <div class="about-copy">
+      <p class="kicker">{t.about.kicker}</p>
+      <h2 class="section-title">{t.about.title}</h2>
+      {t.about.paragraphs.map((p) => <p>{p}</p>)}
+    </div>
+    <div class="about-face">
+      <Picture
+        src={about}
+        formats={['avif', 'webp']}
+        widths={[480, 800, 1200, 1600, 2000]}
+        sizes="(max-width: 768px) 100vw, 42vw"
+        alt={t.about.portraitAlt}
+        width={2000}
+        height={1024}
+        quality={90}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+  </div>
+</section>

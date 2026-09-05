@@ -1,0 +1,54 @@
+---
+import videos from '../data/videos.json';
+import { getDict, localized, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getDict(lang);
+---
+
+<section class="section" id="videos">
+  <div class="wrap">
+    <p class="kicker">{t.videos.kicker}</p>
+    <h2 class="section-title">{t.videos.title}</h2>
+    <div class="videos">
+      {
+        videos.map((video) => (
+          <article class="video-card">
+            <button class="video-facade" type="button" data-video={video.id} data-title={`${localized(video.title, lang)} — BAGIRA`}>
+              <img
+                src={`https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`}
+                alt=""
+                width={1280}
+                height={720}
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="play"><span>▶</span></span>
+              <span class="visually-hidden">{t.videos.play}: {localized(video.title, lang)}</span>
+            </button>
+            <p class="video-title">{localized(video.title, lang)}</p>
+          </article>
+        ))
+      }
+    </div>
+    <p>
+      <a class="btn btn-ghost" href="https://www.youtube.com/c/bagiraofficial" rel="noopener noreferrer" target="_blank">
+        {t.videos.channel}
+      </a>
+    </p>
+  </div>
+</section>
+
+<style>
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+</style>

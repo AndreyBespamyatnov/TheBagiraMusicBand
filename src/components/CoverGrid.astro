@@ -1,0 +1,81 @@
+---
+import { getImage, Picture } from 'astro:assets';
+import { covers } from '../assets/covers';
+import releases from '../data/releases.json';
+import { getDict, localized, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getDict(lang);
+const firstCover = covers[releases[0]?.cover];
+const firstThumb = firstCover
+  ? await getImage({ src: firstCover, width: 400, format: 'webp', quality: 82 })
+  : null;
+
+const typeLabel = {
+  album: t.disco.typeAlbum,
+  single: t.disco.typeSingle,
+  collab: t.disco.typeCollab,
+} as const;
+---
+
+{firstThumb && <link rel="preload" as="image" href={firstThumb.src} fetchpriority="high" />}
+<div class="covers">
+  {
+    releases.map((release, index) => {
+      const image = covers[release.cover];
+      const title = localized(release.title, lang);
+      return (
+        <article class="cover-card" data-type={release.type}>
+          {image && (
+            <Picture
+              src={image}
+              formats={['webp']}
+              widths={[400, 800]}
+              sizes="(max-width: 768px) 46vw, 400px"
+              alt={`${title} (${release.year})`}
+              width={800}
+              height={800}
+              quality={82}
+              loading={index < 2 ? 'eager' : 'lazy'}
+              fetchpriority={index === 0 ? 'high' : 'auto'}
+              decoding="async"
+            />
+          )}
+          <details>
+            <summary>
+              <div class="cover-meta">
+                <span>{release.year}</span>
+                <span>{typeLabel[release.type as keyof typeof typeLabel]}</span>
+              </div>
+              <h2 class="cover-title">{title}</h2>
+            </summary>
+            <div class="cover-panel">
+              {release.label && (
+                <p>
+                  {t.disco.label}: {release.label}
+                </p>
+              )}
+              {'tracks' in release && release.tracks && (
+                <div>
+                  <p>{t.disco.tracks}</p>
+                  <ol class="tracklist">
+                    {release.tracks.map((track) => (
+                      <li>{localized(track, lang)}</li>
+                    ))}
+                  </ol>
+                </div>
+              )}
+              <a class="btn" href={release.listen} rel="noopener noreferrer" target="_blank">
+                {t.disco.listen}
+              </a>
+            </div>
+          </details>
+        </article>
+      );
+    })
+  }
+</div>

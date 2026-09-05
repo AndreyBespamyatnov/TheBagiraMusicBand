@@ -1,0 +1,22 @@
+[
+  {
+    "id": "alla",
+    "name": { "ru": "Алла Булгакова", "en": "Alla Bulgakova" },
+    "role": { "ru": "вокал", "en": "vocals" }
+  },
+  {
+    "id": "alexander",
+    "name": { "ru": "Александр Шадров", "en": "Alexander Shadrov" },
+    "role": { "ru": "гитара, бэк-вокал", "en": "guitar, backing vocals" }
+  },
+  {
+    "id": "rival",
+    "name": { "ru": "Риваль Закиров", "en": "Rival Zakirov" },
+    "role": { "ru": "бас", "en": "bass" }
+  },
+  {
+    "id": "bulat",
+    "name": { "ru": "Булат Садреев", "en": "Bulat Sadreev" },
+    "role": { "ru": "ударные", "en": "drums" }
+  }
+]

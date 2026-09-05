@@ -1,0 +1,44 @@
+---
+import dates from '../data/tour.json';
+import { getDict, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+interface Show {
+  date: string;
+  city: { ru: string; en: string };
+  venue: { ru: string; en: string };
+  href?: string;
+}
+
+const { lang } = Astro.props;
+const t = getDict(lang);
+const shows = dates as Show[];
+---
+
+<section class="section" id="tour">
+  <div class="wrap">
+    <p class="kicker">{t.tour.kicker}</p>
+    <h2 class="section-title">{t.tour.title}</h2>
+    {
+      shows.length === 0 ? (
+        <p class="tour-empty">{t.tour.empty}</p>
+      ) : (
+        <ol class="dates">
+          {shows.map((show) => (
+            <li class="date-row">
+              <time datetime={show.date}>{show.date}</time>
+              <strong>{show.city[lang]}</strong>
+              <span>{show.venue[lang]}</span>
+            </li>
+          ))}
+        </ol>
+      )
+    }
+    <p>
+      <a class="btn" href={t.tour.ticketsHref} rel="noopener noreferrer" target="_blank">{t.tour.tickets}</a>
+    </p>
+  </div>
+</section>

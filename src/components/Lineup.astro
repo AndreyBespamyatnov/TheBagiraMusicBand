@@ -1,0 +1,28 @@
+---
+import members from '../data/members.json';
+import { getDict, localized, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getDict(lang);
+---
+
+<section class="section" id="lineup">
+  <div class="wrap">
+    <p class="kicker">{t.lineup.kicker}</p>
+    <h2 class="section-title">{t.lineup.title}</h2>
+    <ul class="lineup">
+      {
+        members.map((member) => (
+          <li class="member">
+            <strong>{localized(member.name, lang)}</strong>
+            <span>{localized(member.role, lang)}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+---
+import About from '../components/About.astro';
+import Contacts from '../components/Contacts.astro';
+import Hero from '../components/Hero.astro';
+import HeroPreload from '../components/HeroPreload.astro';
+import Latest from '../components/Latest.astro';
+import Lineup from '../components/Lineup.astro';
+import Tour from '../components/Tour.astro';
+import Videos from '../components/Videos.astro';
+import { getDict } from '../i18n';
+import Base from '../layouts/Base.astro';
+
+const lang = 'ru' as const;
+const t = getDict(lang);
+---
+
+<Base lang={lang} page="home" title={t.meta.homeTitle} description={t.meta.homeDescription} path="/">
+  <HeroPreload slot="head" />
+  <main id="content">
+    <Hero lang={lang} />
+    <Latest lang={lang} />
+    <About lang={lang} />
+    <Lineup lang={lang} />
+    <Videos lang={lang} />
+    <Tour lang={lang} />
+    <Contacts lang={lang} />
+  </main>
+</Base>

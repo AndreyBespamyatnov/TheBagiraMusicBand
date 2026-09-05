@@ -1,0 +1,70 @@
+---
+import { getDict, localePath, otherLang, type Lang } from '../i18n';
+import logo from '../assets/logo.png';
+
+interface Props {
+  lang: Lang;
+  page: 'home' | 'disco';
+}
+
+const { lang, page } = Astro.props;
+const t = getDict(lang);
+const other = otherLang(lang);
+const home = localePath(lang, '/');
+const disco = localePath(lang, '/discography/');
+const about = `${home}#about`;
+const tour = `${home}#tour`;
+const contacts = `${home}#contacts`;
+const otherHref = page === 'disco' ? localePath(other, '/discography/') : localePath(other, '/');
+---
+
+<a class="skip-link" href="#content">{t.nav.skip}</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href={home}>
+      <img src={logo.src} alt="BAGIRA" width={logo.width} height={logo.height} />
+    </a>
+    <nav class="nav-desktop" aria-label={t.nav.home}>
+      <a href={home} aria-current={page === 'home' ? 'page' : undefined}>{t.nav.home}</a>
+      <a href={about}>{t.nav.about}</a>
+      <a href={tour}>{t.nav.tour}</a>
+      <a href={disco} aria-current={page === 'disco' ? 'page' : undefined}>{t.nav.disco}</a>
+      <a href={contacts}>{t.nav.contacts}</a>
+      <p class="lang">
+        <span class="visually-hidden">{t.nav.langLabel}</span>
+        <a href={localePath('ru', page === 'disco' ? '/discography/' : '/')} lang="ru" aria-current={lang === 'ru' ? 'page' : undefined}>{t.nav.langRu}</a>
+        <a href={localePath('en', page === 'disco' ? '/discography/' : '/')} lang="en" aria-current={lang === 'en' ? 'page' : undefined}>{t.nav.langEn}</a>
+      </p>
+    </nav>
+    <button class="menu-toggle" type="button" aria-controls="site-menu" aria-expanded="false" data-menu-open>
+      {t.nav.menu}
+    </button>
+  </div>
+</header>
+<dialog class="menu-dialog" id="site-menu" aria-label={t.nav.menu}>
+  <div class="menu-head">
+    <p class="lang">
+      <a href={localePath('ru', page === 'disco' ? '/discography/' : '/')} lang="ru" aria-current={lang === 'ru' ? 'page' : undefined}>{t.nav.langRu}</a>
+      <a href={localePath('en', page === 'disco' ? '/discography/' : '/')} lang="en" aria-current={lang === 'en' ? 'page' : undefined}>{t.nav.langEn}</a>
+    </p>
+    <button class="menu-toggle" type="button" data-menu-close>{t.nav.close}</button>
+  </div>
+  <nav aria-label={t.nav.menu}>
+    <a href={home}>{t.nav.home}</a>
+    <a href={about}>{t.nav.about}</a>
+    <a href={tour}>{t.nav.tour}</a>
+    <a href={disco}>{t.nav.disco}</a>
+    <a href={contacts}>{t.nav.contacts}</a>
+    <a href={otherHref} lang={other} data-lang-switch>{other === 'en' ? 'English' : 'Русский'}</a>
+  </nav>
+</dialog>
+
+<style>
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+</style>

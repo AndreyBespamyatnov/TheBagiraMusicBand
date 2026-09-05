@@ -1,0 +1,49 @@
+---
+import { Picture } from 'astro:assets';
+import cover from '../assets/covers/metelitsa.jpg';
+import releases from '../data/releases.json';
+import videos from '../data/videos.json';
+import { getDict, localized, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getDict(lang);
+const latest = releases.find((item) => item.featured) ?? releases[0];
+const video = videos.find((item) => item.title.ru === latest.title.ru) ?? videos[0];
+---
+
+<section class="section" id="latest">
+  <div class="wrap latest">
+    <Picture
+      class="cover"
+      src={cover}
+      formats={['avif', 'webp']}
+      widths={[400, 800, 1200, 1600]}
+      sizes="(max-width: 768px) 80vw, 22rem"
+      alt={`${localized(latest.title, lang)} (${latest.year})`}
+      width={1600}
+      height={1600}
+      quality={90}
+      loading="lazy"
+      decoding="async"
+    />
+    <div>
+      <p class="kicker">{t.latest.kicker}</p>
+      <h2 class="section-title">{localized(latest.title, lang)}</h2>
+      <p>{t.latest.pitch}</p>
+      <div class="actions">
+        <a class="btn" href={latest.listen} rel="noopener noreferrer" target="_blank">{t.latest.listen}</a>
+        {
+          video && (
+            <a class="btn btn-ghost" href={`https://www.youtube.com/watch?v=${video.id}`} rel="noopener noreferrer" target="_blank">
+              {t.latest.video}: {localized(video.title, lang)}
+            </a>
+          )
+        }
+      </div>
+    </div>
+  </div>
+</section>
