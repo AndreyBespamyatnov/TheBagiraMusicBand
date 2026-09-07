@@ -29,8 +29,62 @@ describe('BAGIRA official site', () => {
     cy.get('.tour-empty').should('contain', 'открытых дат нет');
     cy.get('iframe').should('not.exist');
     cy.get('[data-video]').first().click();
-    cy.get('iframe').should('have.attr', 'src').and('include', 'youtube-nocookie.com');
+    cy.get('.video-facade iframe')
+      .should('be.visible')
+      .and('have.attr', 'src')
+      .and('include', 'youtube-nocookie.com');
     cy.checkPageA11y();
+  });
+
+  const homeNav = ['home', 'about', 'tour', 'contacts'] as const;
+
+  const assertHomeNav = (id: (typeof homeNav)[number]) => {
+    cy.get('.nav-desktop [data-nav]').should(($links) => {
+      const current = [...$links]
+        .filter((link) => link.getAttribute('aria-current') === 'page')
+        .map((link) => link.dataset.nav);
+      expect(current, 'desktop nav').to.deep.equal([id]);
+    });
+    cy.get('#site-menu [data-nav]').should(($links) => {
+      const current = [...$links]
+        .filter((link) => link.getAttribute('aria-current') === 'page')
+        .map((link) => link.dataset.nav);
+      expect(current, 'mobile nav').to.deep.equal([id]);
+    });
+  };
+
+  it('highlights each home nav item from clicks and hashes', () => {
+    cy.viewport(1440, 1200);
+    cy.visit('/');
+    assertHomeNav('home');
+
+    cy.get('.nav-desktop [data-nav="about"]').click();
+    cy.location('hash').should('eq', '#about');
+    cy.window().its('scrollY').should('be.gt', 100);
+    assertHomeNav('about');
+
+    cy.get('.nav-desktop [data-nav="tour"]').click();
+    cy.location('hash').should('eq', '#tour');
+    cy.get('#tour').should(($el) => {
+      expect($el[0].getBoundingClientRect().top).to.be.lessThan(160);
+    });
+    assertHomeNav('tour');
+
+    cy.get('.nav-desktop [data-nav="contacts"]').click();
+    cy.location('hash').should('eq', '#contacts');
+    cy.get('#contacts').should('be.visible');
+    assertHomeNav('contacts');
+
+    cy.get('.nav-desktop [data-nav="home"]').click();
+    cy.window().its('scrollY').should('eq', 0);
+    assertHomeNav('home');
+
+    cy.visit('/#about');
+    assertHomeNav('about');
+    cy.visit('/#tour');
+    assertHomeNav('tour');
+    cy.visit('/#contacts');
+    assertHomeNav('contacts');
   });
 
   it('switches language via URL and keeps equal copy', () => {
@@ -57,7 +111,7 @@ describe('BAGIRA official site', () => {
     });
     cy.get('#filter-collabs').check({ force: true });
     cy.get('.cover-card:visible').should('have.length', 2);
-    cy.get('.cover-card:visible a.btn').first().should('have.attr', 'href').and('include', 'band.link');
+    cy.get('.cover-card:visible .cover-link').first().should('have.attr', 'href').and('include', 'band.link');
     cy.get('.nav-desktop a[lang="en"]').click();
     cy.location('pathname').should('eq', '/en/discography/');
     cy.contains('Discography').should('exist');

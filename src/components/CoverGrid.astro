@@ -30,50 +30,31 @@ const typeLabel = {
       const title = localized(release.title, lang);
       return (
         <article class="cover-card" data-type={release.type}>
-          {image && (
-            <Picture
-              src={image}
-              formats={['webp']}
-              widths={[400, 800]}
-              sizes="(max-width: 768px) 46vw, 400px"
-              alt={`${title} (${release.year})`}
-              width={800}
-              height={800}
-              quality={82}
-              loading={index < 2 ? 'eager' : 'lazy'}
-              fetchpriority={index === 0 ? 'high' : 'auto'}
-              decoding="async"
-            />
-          )}
-          <details>
-            <summary>
-              <div class="cover-meta">
-                <span>{release.year}</span>
-                <span>{typeLabel[release.type as keyof typeof typeLabel]}</span>
-              </div>
-              <h2 class="cover-title">{title}</h2>
-            </summary>
-            <div class="cover-panel">
-              {release.label && (
-                <p>
-                  {t.disco.label}: {release.label}
-                </p>
+          <a class="cover-link" href={release.listen} rel="noopener noreferrer" target="_blank">
+            <span class="cover-art">
+              {image && (
+                <Picture
+                  src={image}
+                  formats={['webp']}
+                  widths={[400, 800]}
+                  sizes="(max-width: 768px) 46vw, 400px"
+                  alt={`${title} (${release.year})`}
+                  width={800}
+                  height={800}
+                  quality={82}
+                  loading={index < 2 ? 'eager' : 'lazy'}
+                  fetchpriority={index === 0 ? 'high' : 'auto'}
+                  decoding="async"
+                />
               )}
-              {'tracks' in release && release.tracks && (
-                <div>
-                  <p>{t.disco.tracks}</p>
-                  <ol class="tracklist">
-                    {release.tracks.map((track) => (
-                      <li>{localized(track, lang)}</li>
-                    ))}
-                  </ol>
-                </div>
-              )}
-              <a class="btn" href={release.listen} rel="noopener noreferrer" target="_blank">
-                {t.disco.listen}
-              </a>
-            </div>
-          </details>
+              <span class="cover-listen">{t.disco.listen}</span>
+            </span>
+            <span class="cover-meta">
+              <span>{release.year}</span>
+              <span>{typeLabel[release.type as keyof typeof typeLabel]}</span>
+            </span>
+            <h2 class="cover-title">{title}</h2>
+          </a>
         </article>
       );
     })

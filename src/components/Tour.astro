@@ -11,11 +11,12 @@ interface Show {
   city: { ru: string; en: string };
   venue: { ru: string; en: string };
   href?: string;
+  example?: boolean;
 }
 
 const { lang } = Astro.props;
 const t = getDict(lang);
-const shows = dates as Show[];
+const shows = (dates as Show[]).filter((show) => !show.example);
 ---
 
 <section class="section" id="tour">

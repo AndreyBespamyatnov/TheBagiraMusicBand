@@ -26,21 +26,7 @@
     "title": { "ru": "Хаос и тьма", "en": "Chaos and Darkness" },
     "cover": "chaos-and-darkness",
     "listen": "https://band.link/xaoc",
-    "label": "Fono Ltd.",
-    "tracks": [
-      { "ru": "В ожидании конца", "en": "Waiting for the End" },
-      { "ru": "Хаос и тьма", "en": "Chaos and Darkness" },
-      { "ru": "Чёрная магия", "en": "Black Magic" },
-      { "ru": "Волк у ворот", "en": "Wolf at the Gate" },
-      { "ru": "Скрипач", "en": "Violinist" },
-      { "ru": "Заслоняя солнце", "en": "Blocking Out the Sun" },
-      { "ru": "Мортидо", "en": "Mortido" },
-      { "ru": "Вий", "en": "Viy" },
-      { "ru": "Мир сходит с ума", "en": "The World Is Going Crazy" },
-      { "ru": "Город, где разбиты фонари", "en": "The City Where the Street Lights Are Broken" },
-      { "ru": "Нельзя бояться мёртвых", "en": "You Can't Be Afraid of the Dead" },
-      { "ru": "Пришёл. Увидел. Победил.", "en": "I Came. I Saw. I Conquered." }
-    ]
+    "label": "Fono Ltd."
   },
   {
     "id": "i-came-i-saw",
@@ -98,21 +84,7 @@
     "title": { "ru": "И грянет гром", "en": "And the Thunder Will Strike" },
     "cover": "and-thunder",
     "listen": "https://band.link/gryanetgrom",
-    "label": "Fono Ltd.",
-    "tracks": [
-      { "ru": "И грянет гром", "en": "And the Thunder Will Strike" },
-      { "ru": "Риск", "en": "Risk" },
-      { "ru": "Ангел Ада", "en": "Hell's Angel" },
-      { "ru": "Брат на брата", "en": "Brother Against Brother" },
-      { "ru": "Дотянуться до небес", "en": "Reach for the Sky" },
-      { "ru": "Немой испуг", "en": "Silent Fright" },
-      { "ru": "Ничего святого", "en": "Nothing Sacred" },
-      { "ru": "Судьба правит всем", "en": "Destiny Rules Everything" },
-      { "ru": "Сбежать", "en": "Escape" },
-      { "ru": "Табу", "en": "Taboo" },
-      { "ru": "Рок-н-ролла больше нет", "en": "Rock and Roll Is No More" },
-      { "ru": "Guardian Angel (bonus)", "en": "Guardian Angel (bonus)" }
-    ]
+    "label": "Fono Ltd."
   },
   {
     "id": "covered-in-metal",
@@ -194,11 +166,7 @@
     "date": "2019-08-20",
     "title": { "ru": "From Russia with Groove", "en": "From Russia with Groove" },
     "cover": "from-russia",
-    "listen": "https://band.link/bagira",
-    "tracks": [
-      { "ru": "Shadow", "en": "Shadow" },
-      { "ru": "Whisper", "en": "Whisper" }
-    ]
+    "listen": "https://band.link/bagira"
   },
   {
     "id": "zoo",

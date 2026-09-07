@@ -177,6 +177,7 @@
 
   .section {
     padding-block: clamp(3.5rem, 10vw, 7rem);
+    scroll-margin-top: var(--header-h);
     container-type: inline-size;
   }
 
@@ -367,6 +368,10 @@
       letter-spacing: 0.08em;
       text-decoration: none;
       text-transform: uppercase;
+    }
+
+    nav a[aria-current='page'] {
+      color: var(--ember);
     }
   }
 
@@ -583,6 +588,10 @@
     padding: 0;
     cursor: pointer;
 
+    &:disabled {
+      cursor: default;
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -617,6 +626,14 @@
       height: 100%;
       border: 0;
     }
+  }
+
+  .video-card iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
   }
 
   .video-title {
@@ -712,6 +729,52 @@
     background: var(--bg-elev);
   }
 
+  .cover-link {
+    display: grid;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .cover-art {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+
+  .cover-art::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / 0);
+    transition: background 160ms ease;
+    pointer-events: none;
+  }
+
+  .cover-listen {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 160ms ease;
+    pointer-events: none;
+  }
+
+  .cover-link:hover .cover-art::after,
+  .cover-link:focus-visible .cover-art::after {
+    background: rgb(0 0 0 / 0.58);
+  }
+
+  .cover-link:hover .cover-listen,
+  .cover-link:focus-visible .cover-listen {
+    opacity: 1;
+  }
+
   .cover-card :is(img, picture) {
     width: 100%;
     max-width: 100%;
@@ -723,24 +786,11 @@
     object-fit: cover;
   }
 
-  .cover-card details {
-    padding: 0.75rem 0.7rem 0.9rem;
-  }
-
-  .cover-card summary {
-    list-style: none;
-    cursor: pointer;
-    min-height: 44px;
-  }
-
-  .cover-card summary::-webkit-details-marker {
-    display: none;
-  }
-
   .cover-meta {
     display: flex;
     justify-content: space-between;
     gap: 0.5rem;
+    padding: 0.75rem 0.7rem 0;
     color: var(--steel);
     font-size: 0.75rem;
     letter-spacing: 0.08em;
@@ -749,23 +799,11 @@
 
   .cover-title {
     margin: 0.2rem 0 0;
+    padding: 0 0.7rem 0.9rem;
     font-family: var(--font-display);
     font-size: 1rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-  }
-
-  .cover-panel {
-    display: grid;
-    gap: 0.65rem;
-    padding-top: 0.65rem;
-  }
-
-  .tracklist {
-    margin: 0;
-    padding-inline-start: 1.1rem;
-    color: var(--steel);
-    font-size: 0.9rem;
   }
 
   .page-not-found {

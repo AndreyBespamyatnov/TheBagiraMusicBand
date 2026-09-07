@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "example": true,
+    "date": "2026-11-14",
+    "city": { "ru": "Казань", "en": "Kazan" },
+    "venue": { "ru": "Улей", "en": "Uley" },
+    "href": "https://band.link/bagiralive/"
+  },
+  {
+    "example": true,
+    "date": "2026-12-05",
+    "city": { "ru": "Москва", "en": "Moscow" },
+    "venue": { "ru": "Москва Hall", "en": "Moskva Hall" },
+    "href": "https://band.link/bagiralive/"
+  },
+  {
+    "example": true,
+    "date": "2027-02-20",
+    "city": { "ru": "Санкт-Петербург", "en": "Saint Petersburg" },
+    "venue": { "ru": "Космонавт", "en": "Cosmonaut" }
+  }
+]
