@@ -31,8 +31,10 @@ describe('BAGIRA official site', () => {
     cy.get('[data-video]').first().click();
     cy.get('.video-facade iframe')
       .should('be.visible')
+      .and('have.attr', 'referrerpolicy', 'strict-origin-when-cross-origin')
       .and('have.attr', 'src')
-      .and('include', 'youtube-nocookie.com');
+      .and('include', 'youtube-nocookie.com')
+      .and('include', 'origin=');
     cy.checkPageA11y();
   });
 

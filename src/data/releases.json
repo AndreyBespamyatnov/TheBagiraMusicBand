@@ -1,4 +1,14 @@
 [
+   {
+    "id": "lebedinaya-pesnya",
+    "type": "single",
+    "year": 2026,
+    "date": "2026-08-04",
+    "featured": true,
+    "title": { "ru": "Лебединая песня", "en": "Swan's song" },
+    "cover": "lebedinaya-pesnya",
+    "listen": "https://band.link/swansongtch"
+  },
   {
     "id": "metelitsa",
     "type": "single",

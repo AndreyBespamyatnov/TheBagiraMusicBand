@@ -1,6 +1,6 @@
 ---
 import { Picture } from 'astro:assets';
-import cover from '../assets/covers/metelitsa.jpg';
+import { covers } from '../assets/covers';
 import releases from '../data/releases.json';
 import videos from '../data/videos.json';
 import { getDict, localized, type Lang } from '../i18n';
@@ -12,24 +12,29 @@ interface Props {
 const { lang } = Astro.props;
 const t = getDict(lang);
 const latest = releases.find((item) => item.featured) ?? releases[0];
+const cover = covers[latest.cover];
 const video = videos.find((item) => item.title.ru === latest.title.ru) ?? videos[0];
 ---
 
 <section class="section" id="latest">
   <div class="wrap latest">
-    <Picture
-      class="cover"
-      src={cover}
-      formats={['avif', 'webp']}
-      widths={[400, 800, 1200, 1600]}
-      sizes="(max-width: 768px) 80vw, 22rem"
-      alt={`${localized(latest.title, lang)} (${latest.year})`}
-      width={1600}
-      height={1600}
-      quality={90}
-      loading="lazy"
-      decoding="async"
-    />
+    {
+      cover && (
+        <Picture
+          class="cover"
+          src={cover}
+          formats={['avif', 'webp']}
+          widths={[400, 800, 1200, 1600]}
+          sizes="(max-width: 768px) 80vw, 22rem"
+          alt={`${localized(latest.title, lang)} (${latest.year})`}
+          width={1600}
+          height={1600}
+          quality={90}
+          loading="lazy"
+          decoding="async"
+        />
+      )
+    }
     <div>
       <p class="kicker">{t.latest.kicker}</p>
       <h2 class="section-title">{localized(latest.title, lang)}</h2>

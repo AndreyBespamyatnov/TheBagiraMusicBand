@@ -20,9 +20,8 @@ Upload the contents of `dist/` over the current site. Old `index.html` and `disc
 ## Add a release
 
 1. Put a square cover in `src/assets/covers/{slug}.jpg` (about 800px).
-2. Add a row to `src/data/releases.json` (`title.ru` / `title.en`, `type`: `album` | `single` | `collab`, BandLink URL).
-3. Import the file in `src/assets/covers.ts`.
-4. `npm run build` and upload `dist/`.
+2. Add a row to `src/data/releases.json` (`title.ru` / `title.en`, `type`: `album` | `single` | `collab`, BandLink URL). Set `cover` to the filename stem (`lebedinaya-pesnya.jpg` → `"cover": "lebedinaya-pesnya"`).
+3. `npm run build` and upload `dist/`.
 
 ## Add a show
 

@@ -116,8 +116,10 @@ document.querySelectorAll<HTMLButtonElement>('[data-video]').forEach((button) =>
     const title = button.dataset.title ?? 'YouTube';
     if (!id || button.dataset.playing === 'true') return;
     const frame = document.createElement('iframe');
-    frame.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+    const origin = encodeURIComponent(location.origin);
+    frame.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&origin=${origin}`;
     frame.title = title;
+    frame.referrerPolicy = 'strict-origin-when-cross-origin';
     frame.allow =
       'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
     frame.allowFullscreen = true;
