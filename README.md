@@ -20,7 +20,7 @@ Upload the contents of `dist/` over the current site. Old `index.html` and `disc
 ## Add a release
 
 1. Put a square cover in `src/assets/covers/{slug}.jpg` (about 800px).
-2. Add a row to `src/data/releases.json` (`title.ru` / `title.en`, `type`: `album` | `single` | `collab`, BandLink URL). Set `cover` to the filename stem (`lebedinaya-pesnya.jpg` → `"cover": "lebedinaya-pesnya"`).
+2. Add a row to `src/data/releases.json` (`title.ru` / `title.en`, `type`: `album` | `single` | `feat`, BandLink URL). Set `cover` to the filename stem (`lebedinaya-pesnya.jpg` → `"cover": "lebedinaya-pesnya"`).
 3. `npm run build` and upload `dist/`.
 
 ## Add a show
@@ -36,7 +36,7 @@ An empty array shows the bilingual empty state plus the BandLink tickets button.
 ## Stack
 
 - Latest Astro, `output: 'static'`
-- Hero photo is the live homepage studio shot (`assets/images/9.jpg`). Displayed like the live site: full landscape, `object-fit: cover`, position `50% 50%`.
+- Hero photo is `src/assets/hero.jpg`. Displayed like the live site: full landscape, `object-fit: cover`, position `50% 50%`.
 - TypeScript **6.0.3** so `astro check` and the language server work. TypeScript 7’s native compiler is faster, but it does not export the JS language-service API that Astro still needs.
 - Custom CSS tokens in `src/styles/global.css` (no Tailwind)
 - Self-hosted Oswald + Manrope (Cyrillic + Latin)

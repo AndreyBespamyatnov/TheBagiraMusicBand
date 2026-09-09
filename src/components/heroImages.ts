@@ -3,9 +3,8 @@ import { getImage } from 'astro:assets';
 import heroPhoto from '../assets/hero.jpg';
 
 /**
- * Live homepage photo (`assets/images/9.jpg`, 2560×1309):
- * current four-member studio shot on black. Not 10.jpg (album banner)
- * and not the 2018 outdoor photo.
+ * Homepage hero photo (`src/assets/hero.jpg`).
+ * Widths match the live layout: full-bleed landscape, object-fit cover.
  */
 const widths = [1280, 1920, 2560] as const;
 

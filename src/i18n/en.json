@@ -2,7 +2,7 @@
   "meta": {
     "siteName": "BAGIRA",
     "homeTitle": "BAGIRA — official site",
-    "homeDescription": "BAGIRA is a female-fronted groove / modern metal band from Kazan. New single Metelitsa and the album Chaos and Darkness.",
+    "homeDescription": "BAGIRA is a female-fronted groove / modern metal band from Kazan. New single Swan's song and the album Chaos and Darkness.",
     "discoTitle": "Discography — BAGIRA",
     "discoDescription": "Official BAGIRA discography: albums, singles and collaborations from 2011 to 2026.",
     "ogAlt": "BAGIRA band photograph"
@@ -27,8 +27,8 @@
   },
   "latest": {
     "kicker": "Latest release",
-    "title": "Metelitsa",
-    "pitch": "A snowstorm, a road to the edge of the earth, and melodic death metal with a female voice — the first single of 2026.",
+    "title": "Swan's song",
+    "pitch": "“Let everything burn if you’re not here…” — a reinterpretation of the classics in a new author’s song from 2026.",
     "listen": "Listen on BandLink",
     "video": "Video"
   },
@@ -83,13 +83,13 @@
     "filterAll": "All",
     "filterAlbums": "Albums",
     "filterSingles": "Singles",
-    "filterCollabs": "Collabs",
+    "filterFeats": "Feats",
     "listen": "Listen",
     "tracks": "Tracklist",
     "label": "Label",
     "typeAlbum": "Album",
     "typeSingle": "Single",
-    "typeCollab": "Collab"
+    "typeFeat": "Feat"
   },
   "footer": {
     "copyright": "© 2026 BAGIRA",

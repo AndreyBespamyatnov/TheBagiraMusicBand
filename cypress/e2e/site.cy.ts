@@ -111,9 +111,9 @@ describe('BAGIRA official site', () => {
     cy.get('.cover-card:visible').each(($el) => {
       expect($el.attr('data-type')).to.eq('album');
     });
-    cy.get('#filter-collabs').check({ force: true });
-    cy.get('.cover-card:visible').should('have.length', 2);
-    cy.get('.cover-card:visible .cover-link').first().should('have.attr', 'href').and('include', 'band.link');
+    cy.get('#filter-feats').check({ force: true });
+    cy.get('.cover-card:visible').should('have.length', 4);
+    cy.get('.cover-card:visible .cover-link').first().should('have.attr', 'href').and('match', /^https:\/\//);
     cy.get('.nav-desktop a[lang="en"]').click();
     cy.location('pathname').should('eq', '/en/discography/');
     cy.contains('Discography').should('exist');

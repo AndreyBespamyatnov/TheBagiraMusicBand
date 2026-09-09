@@ -2,7 +2,7 @@
   "meta": {
     "siteName": "BAGIRA",
     "homeTitle": "BAGIRA — официальный сайт",
-    "homeDescription": "BAGIRA — female-fronted groove / modern metal из Казани. Новый сингл «Метелица» и альбом «Хаос и тьма».",
+    "homeDescription": "BAGIRA — female-fronted groove / modern metal из Казани. Новый сингл «Лебединая песня» и альбом «Хаос и тьма».",
     "discoTitle": "Дискография — BAGIRA",
     "discoDescription": "Официальная дискография BAGIRA: альбомы, синглы и коллаборации с 2011 по 2026.",
     "ogAlt": "BAGIRA — фото группы"
@@ -27,8 +27,8 @@
   },
   "latest": {
     "kicker": "Свежий релиз",
-    "title": "Метелица",
-    "pitch": "Снежная буря, путь на край земли и мелодик-дэт с женским вокалом — первый сингл 2026 года.",
+    "title": "Лебединая песня",
+    "pitch": "«Пусть всё пылает, если нет тебя...» переосмысление классики в новой авторской песне 2026 года.",
     "listen": "Слушать на BandLink",
     "video": "Клип"
   },
@@ -83,13 +83,13 @@
     "filterAll": "Все",
     "filterAlbums": "Альбомы",
     "filterSingles": "Синглы",
-    "filterCollabs": "Коллабы",
+    "filterFeats": "Фиты",
     "listen": "Слушать",
     "tracks": "Трек-лист",
     "label": "Лейбл",
     "typeAlbum": "Альбом",
     "typeSingle": "Сингл",
-    "typeCollab": "Коллаб"
+    "typeFeat": "Фит"
   },
   "footer": {
     "copyright": "© 2026 BAGIRA",

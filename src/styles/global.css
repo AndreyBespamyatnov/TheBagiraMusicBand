@@ -879,7 +879,7 @@
 
   main:has(#filter-albums:checked) .cover-card:not([data-type='album']),
   main:has(#filter-singles:checked) .cover-card:not([data-type='single']),
-  main:has(#filter-collabs:checked) .cover-card:not([data-type='collab']) {
+  main:has(#filter-feats:checked) .cover-card:not([data-type='feat']) {
     display: none;
   }
 

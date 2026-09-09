@@ -10,6 +10,22 @@
     "listen": "https://band.link/swansongtch"
   },
   {
+    "id": "kolovrat",
+    "type": "feat",
+    "year": 2026,
+    "title": { "ru": "Легенда о Коловрате (feat. Алькасар)", "en": "The Legend of Kolovrat (feat. Алькасар)" },
+    "cover": "kolovrat",
+    "listen": "https://zvonko.link/Legendaokolovrate"
+  },
+  {
+    "id": "spill",
+    "type": "feat",
+    "year": 2026,
+    "title": { "ru": "Рассыпаться (feat. Ответы внутри)", "en": "To spill (feat. Ответы внутри)" },
+    "cover": "spill",
+    "listen": "https://band.link/otvbgr"
+  },
+  {
     "id": "metelitsa",
     "type": "single",
     "year": 2026,
@@ -48,7 +64,7 @@
   },
   {
     "id": "ne-po-puti",
-    "type": "collab",
+    "type": "feat",
     "year": 2023,
     "title": { "ru": "Не по пути (feat. Alessiee)", "en": "Not the Same Path (feat. Alessiee)" },
     "cover": "ne-po-puti",
@@ -56,7 +72,7 @@
   },
   {
     "id": "maski",
-    "type": "collab",
+    "type": "feat",
     "year": 2023,
     "title": { "ru": "Маски (feat. Мёртвые Осы)", "en": "Masks (feat. Myortvye Osy)" },
     "cover": "maski",
